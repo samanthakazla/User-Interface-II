@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+  list-style: none;}
+  
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  padding: 20px;
+}
+
+
+.topnav {
+    text-align:center;
+    font-size: x-large;
+    background-color:#000000;
+    color: #fff;
+    }
+
+.topnav li {
+  display:inline;
+}
+
+.topnav a { 
+  text-decoration:none; 
+  padding:0 30px; 
+  color: #fff;
+}
+
+.topnav a:hover {
+  background-color: #a6c5f7;
+  padding:0 30px; ;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav a.active {
+  background-color:#7891c2;
+  color: white;
+}
+
+
+header {
+  height: 10vh;
+  text-align: center;
+  display: block;
+}
+
+
+.intro {
+background-color: #d5d2d6;
+margin-top: 25px;
+}
+
+.intro:hover{
+background-color: #dbb3e8;
+transition: ease-in;
+transition-duration: 0.7s;
+}
+
+
+body {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+h1 {text-align: center;  
+  margin: 20px 0;
+  font-size: 60px; 
+  text-align: center;
+}
+h2 {text-align: center;
+  margin: 20x 0px;
+  font-size: 40px; 
+  text-align: center;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto ;
+  }
+
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;}
+  p{
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+
+
+p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 25px;   
+  }
+
+#p {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 25px;   
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;}
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+ 
+  
+footer {
+	background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+ }
+
+ footer a {
+   color: #FFF;
+ }
+ @media screen and (max-width: 500px) {
+  .topnav {
+    float: none;
+    width: 100%;
+  }
+    .wrapper {
+      width: 100%;
+      flex-direction: column;
+    }
+   
+    header {
+text-align: center;
+  float: none;
+  display: block;
+  padding-bottom: 150px;
+}
+    }
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+      float: none;
+      display: block;
+      padding-bottom: 15px;
+    }
+
+    .wrapper {
+      width: 100%;
+      flex-direction: row;
+      padding-bottom: 50px;
+    }
+    }
